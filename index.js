@@ -10,7 +10,7 @@ while(i< document.querySelectorAll(".drum").length){
 
   });
 
-  window.addEventListener("keyup", function (event){
+  window.addEventListener("keydown", function (event){
 
     makeSound(event.key);
     buttonAnimation(event.key);
