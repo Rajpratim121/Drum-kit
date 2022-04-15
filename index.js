@@ -7,18 +7,17 @@ while(i< document.querySelectorAll(".drum").length){
     var buttonToTrigger = this.innerHTML;
     makeSound(buttonToTrigger);
     buttonAnimation(buttonToTrigger);
-
   });
-
-  window.addEventListener("keydown", function (event){
-
-    makeSound(event.key);
-    buttonAnimation(event.key);
-
-  })
 
   i++;
 }
+
+window.addEventListener("keydown", function (event){
+
+  makeSound(event.key);
+  buttonAnimation(event.key);
+
+});
 
 function makeSound(key){
 
